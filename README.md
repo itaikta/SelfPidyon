@@ -1,4 +1,5 @@
-# Self Pidyon
-Redemption of the firstborn is an important mitzvah from from the Torah which calls on a father to redeem a firstborn son by paying 5 silver shekels to a Kohen.\
-Sometimes however, due to a number of circumstances this doesn't happen, and when the firstborn turns 13, the obligation then falls upon himself to Redeem himself. IE. A "Self Pidyon"\
-This site provides information on how to conduct a Self Pidyon 
+# Vue 3 + TypeScript + Vite
+
+This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+
+Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
