@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: black;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,8 +14,9 @@
 }
 
 #app {
+  background-color: #213547;
   margin: 0 auto;
-  padding: 40px;
+  padding: 1px 40px 40px;
   width: 70%;
   min-width: 300px;
 }
@@ -31,7 +32,7 @@ p {
   background-color: #f1f1f1;
 }
 
-.tabs.tab {
+#tabs.tab {
   background-color: inherit;
   float: left;
   border: none;
