@@ -44,6 +44,12 @@
     font-size: 14px;
   }
 }
+@media only screen and (max-width: 400px) {
+  #navTabs Button {
+    padding: 7px 10px;
+    font-size: 10px;
+  }
+}
 
 p {
   margin: 0;
