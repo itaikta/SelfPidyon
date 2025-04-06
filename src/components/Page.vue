@@ -1,6 +1,5 @@
 <script setup lang="ts">
-  import Tabs from "./NavTabs.vue";
 </script>
 <template>
-    <Tabs />
+    <p>THIS IS A TEST PAGE</p>
 </template>

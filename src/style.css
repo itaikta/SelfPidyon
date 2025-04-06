@@ -7,18 +7,35 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: black;
 
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#app {
-  background-color: #213547;
-  margin: 0 auto;
-  padding: 1px 40px 40px;
-  width: 70%;
+#app, #navTabs {
   min-width: 300px;
+  margin: 0 auto;
+}
+
+#app {
+  width: 70%;
+  background-color: #213547;
+  padding: 1px 2% 40px;
+}
+
+#navTabs {
+  width: 74%;
+  background-color: transparent;
+  margin-top: 20px;
+}
+
+#navTabs Button {
+  background-color: #213547;
+  border-radius: 10px 10px 0 0;
+  border: none;
+  padding: 15px 20px;
+  font-size: 20px;
+  color: #FFF;
 }
 
 p {
