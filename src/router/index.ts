@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "../components/HomePage.vue";
-import Page from "../components/Page.vue";
+import Source from "../components/Source.vue";
 
 export default createRouter({
   history: createWebHistory("/"),
@@ -13,7 +13,7 @@ export default createRouter({
     {
       path: "/source",
       name: "Test",
-      component: Page,
+      component: Source,
     }
   ]
 });

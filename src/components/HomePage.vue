@@ -1,10 +1,8 @@
 <template>
-  <h1 id="titleHeading">Self Pidyon</h1>
-  <h2 class="subHeading">Nusach</h2>
+  <h1>Self Pidyon - Nusach</h1>
   <p class="nusach comment" dir="rtl">הבכור אומר:</p>
   <p class="nusach" dir="rtl">אֲנִי בְּכוֹר פָּטֶר רֶחֶם, וְהַקָּבָ"ה צִוָּה לִפְדּוֹת אֶת הַבְּכוֹר (אם מת אביו: וּבַעֲוֹנוֹתֵי מֵת
-    אָבִי קֹדֶם
-    זְמַן פִּדְיוֹנִי), וַאֲנִי נִשְׁאַרְתִּי בְּחִיוּב לִפְדּוֹת עַצְמִי, דִּכְתִיב בְּכוֹר בָּנֶיךָ תִּפְדֶה,
+    אָבִי קֹדֶם זְמַן פִּדְיוֹנִי), וַאֲנִי נִשְׁאַרְתִּי בְּחִיוּב לִפְדּוֹת עַצְמִי, דִּכְתִיב בְּכוֹר בָּנֶיךָ תִּפְדֶה,
     וְקָרִינָן תִּפָּדֶה, רוֹצֶה לוֹמַר שֶׁאֶפְדֶה אֶת עַצְמִי. וַהֲרֵינִי מוּכָן וּמְזְמָן לְקַיִם מִצְוַת הַשֵׁם.</p>
   <br />
 
@@ -26,7 +24,7 @@
 
   <p class="nusach comment" dir="rtl">(ע"פ מהרש"ל, ב-ים של שלמה קדושין - <a href="https://www.hebrewbooks.org/pdfpager.aspx?req=49418&st=&pgnum=29">פ"א סי' נג</a>)</p>
 
-  <h2 class="subHeading">What is a "Self Pidyon"?</h2>
+  <h2>What is a "Self Pidyon"?</h2>
   <p>Redemption of the firstborn is an important mitzvah from from the Torah which calls on a father to redeem a
     firstborn son by paying 5 silver shekels to a Kohen.</p>
   <p>Sometimes however, due to a number of circumstances this doesn't happen, and when the firstborn turns 13, the

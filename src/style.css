@@ -80,13 +80,13 @@ p.comment {
   font-size: 17px;
 }
 
-#titleHeading {
+h1 {
   padding-bottom: 4px;
   border-bottom: 2px solid #777;
   margin-bottom: 30px;
 }
 
-.subHeading {
+h2 {
   color: #777;
   font-style: italic;
 }
