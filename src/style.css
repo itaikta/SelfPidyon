@@ -38,6 +38,13 @@
   color: #FFF;
 }
 
+@media only screen and (max-width: 800px) {
+  #navTabs Button {
+    padding: 11px 14px;
+    font-size: 14px;
+  }
+}
+
 p {
   margin: 0;
 }
@@ -47,6 +54,12 @@ p.nusach, .comment {
 }
 p.comment {
   font-style: italic;
+}
+
+@media only screen and (max-width: 800px) {
+  p.nusach, .comment {
+    font-size: 16px;
+  }
 }
 
 #tabs {
