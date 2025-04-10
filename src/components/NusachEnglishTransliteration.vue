@@ -21,5 +21,5 @@
     <p class="nusach comment">The Kohen now takes the coins and blesses the firstborn in the regular manner</p>
     <br />
 
-    <p class="nusach comment">(ע"פ מהרש"ל, ב-ים של שלמה קדושין - <a href="https://www.hebrewbooks.org/pdfpager.aspx?req=49418&st=&pgnum=29">פ"א סי' נג</a>)</p>
+    <p class="nusach comment">The source for this be found in the Maharal - Yam Shel Shlomo on Maseches Kiddushin <a href="https://www.hebrewbooks.org/pdfpager.aspx?req=49418&st=&pgnum=29">First Chapter, Psika 53</a>)</p>
 </template>
