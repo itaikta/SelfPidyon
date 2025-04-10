@@ -1,11 +1,11 @@
 <script lang="ts" setup>
   import NusachHebrew from './NusachHebrew.vue';
-  import NusachEnglishTranslitiration from './NusachEnglishTranslitiration.vue';
+  import NusachEnglishTransliteration from './NusachEnglishTransliteration.vue';
 </script>
 <template>
   <h1>Self Pidyon - Nusach</h1>
   <div class="columns">
-    <div class="column"><NusachEnglishTranslitiration /></div>
+    <div class="column"><NusachEnglishTransliteration /></div>
     <div class="column"><NusachHebrew /></div>
   </div>
 
