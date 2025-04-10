@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomePage from "../components/HomePage.vue";
+import NusachPage from "../components/NusachPage.vue";
 import Source from "../components/Source.vue";
 
 export default createRouter({
@@ -8,7 +8,7 @@ export default createRouter({
     {
       path: "/",
       name: "Home",
-      component: HomePage,
+      component: NusachPage,
     },
     {
       path: "/source",
