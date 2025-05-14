@@ -20,6 +20,4 @@
 
     <p class="nusach comment" dir="rtl">והכהן נוטל המטבעות ומברכו כנ"ל בנוסח הפדיון הרגיל.</p>
     <br />
-
-    <p class="nusach comment" dir="rtl">(ע"פ מהרש"ל, ב-ים של שלמה קדושין - <a href="https://www.hebrewbooks.org/pdfpager.aspx?req=49418&st=&pgnum=29">פ"א סי' נג</a>)</p>
 </template>
