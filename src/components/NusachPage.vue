@@ -8,6 +8,7 @@
 </script>
 <template>
     <h1>Self Pidyon - Nusach</h1>
+    <p>For background information about Self Pidyon, see our <RouterLink to="/info">Information page</RouterLink>. For the halachic source, visit our <RouterLink to="/source">Source page</RouterLink>.</p>
     <button v-on:click="showLeft = !showLeft" type="button" style="margin-right: 5px;"><span v-if="showLeft">Hide</span><span v-if="!showLeft">Show</span> Left Column</button>
     <button v-if="showLeft" v-on:click="transliteration = !transliteration" type="button">Show <span v-if="transliteration">Translation</span><span v-if="!transliteration">Transliteration</span></button>
     <div class="columns">

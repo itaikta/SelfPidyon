@@ -1,13 +1,16 @@
 <script setup lang="ts">
-    import { useDark } from "@vueuse/core";
-    const isDark = useDark();
+    import { usePreferredColorScheme, useToggle } from '@vueuse/core';
+    import Breadcrumbs from './components/Breadcrumbs.vue';
+    const themeColour = usePreferredColorScheme();
+    const toggleThemeColour = useToggle(themeColour);
 </script>
 
 <template>
     <div id="navTabs">
-        <button type="button" onclick="location.href='/'">Nusach</button>
-        <button type="button" onclick="location.href='/info'">Information</button>
-        <button type="button" onclick="location.href='/source'">Source</button>
+        <button type="button"><RouterLink to="/">Nusach</RouterLink></button>
+        <button type="button"><RouterLink to="/info">Information</RouterLink></button>
+        <button type="button"><RouterLink to="/source">Source</RouterLink></button>
     </div>
+    <Breadcrumbs />
     <RouterView />
 </template>

@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
-import NusachPage from "../components/NusachPage.vue";
-import Source from "../components/Source.vue";
-import Info from "../components/Info.vue";
+const NusachPage = () => import("../components/NusachPage.vue");
+const Source = () => import("../components/Source.vue");
+const Info = () => import("../components/Info.vue");
 
 export default createRouter({
   history: createWebHistory("/"),
@@ -18,8 +18,14 @@ export default createRouter({
     },
     {
       path: "/source",
-      name: "Test",
+      name: "Source",
       component: Source,
+    }
+    ,
+    {
+      path: "/:pathMatch(.*)*",
+      name: "NotFound",
+      component: () => import("../components/NotFound.vue"),
     }
   ]
 });

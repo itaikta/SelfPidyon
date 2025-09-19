@@ -6,11 +6,11 @@
     <br />
 
     <p class="nusach comment">The Kohen asks:</p>
-    <p class="nusach">What would you prefer? yat garmech or to give me five silver sla'im befurkan'h?</p>
+    <p class="nusach">What would you prefer to pay me? Your bone, or five silver sla'im for your redemption?</p>
     <br />
 
     <p class="nusach comment">Answers the Firstborn:</p>
-    <p class="nusach">yat garmi, and for you, five silver sla'im.</p>
+    <p class="nusach">I'll keep my bone, and for you, five silver sla'im.</p>
     <br />
 
     <p class="nusach comment">The first born makes these two blessings:</p>

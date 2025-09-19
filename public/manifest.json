@@ -1,0 +1,27 @@
+{
+  "name": "Self Pidyon - Guide and Nusach",
+  "short_name": "Self Pidyon",
+  "description": "A simple guide and nusach for performing a Self Pidyon (self-redemption of a firstborn)",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#213547",
+  "theme_color": "#213547",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/coins.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/coins.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["religion", "education", "reference"],
+  "lang": "en",
+  "dir": "ltr"
+}

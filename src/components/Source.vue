@@ -13,4 +13,5 @@
         נשארתי בחיוב לפדות עצמי דכתי׳ בכור בניך תפדה וקרינן בית פדה ר״ל שתפדה את עצמי והריני מוכן לקייס מצות השם ואומר
         לו הכהן מאי ניח׳ לך ית נתינתך או חמש קלעים דמחייבי׳ לך בפורקנך ומשיב לו ית ברתי וקה לך ה׳ קלעים כו׳ ומברך שתי
         ברכות ברכות פדיון וברכת שהחיינו</p>
+    <p>For more information about the Self Pidyon ceremony, see our <RouterLink to="/info">Information page</RouterLink> and the complete <RouterLink to="/">Nusach</RouterLink>.</p>
 </template>
