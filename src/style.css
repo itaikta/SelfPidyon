@@ -105,11 +105,11 @@
     :root {
         /* Light theme overrides */
         --color-text: #000000;
-        --color-bg: #213547;
+        --color-bg: #ffffff;
         --color-surface: #f0f0f0;
         --color-surface-contrast: #000000;
         --color-surface-hover: #e6e6e6;
-        --color-surface-muted: #213547;
+        --color-surface-muted: #ffffff;
         --color-border: #d0d7de;
         --color-border-subtle: #777777;
         --color-panel: #f1f1f1;
@@ -141,23 +141,23 @@
         background-color: var(--color-surface-muted);
     }
 
-    #navTabs Button {
+    #navTabs button {
         color: var(--color-tab-inactive-text);
         background-color: var(--color-tab-inactive-bg);
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
     }
 
-    #navTabs Button:hover {
+    #navTabs button:hover {
         background-color: var(--color-surface-hover);
         box-shadow: var(--shadow-3);
     }
 
-    #navTabs Button:active {
+    #navTabs button:active {
         background-color: #dedede;
         box-shadow: var(--shadow-2);
     }
 
-    #navTabs Button:focus-visible {
+    #navTabs button:focus-visible {
         outline: 2px solid #747bff;
         outline-offset: 2px;
     }
@@ -166,7 +166,7 @@
         color: #000;
     }
 
-    Button {
+    button {
         color: var(--color-text);
         background-color: #ddd;
         border-radius: 5px;
@@ -175,14 +175,14 @@
 
 
 @media only screen and (max-width: 800px) {
-    #navTabs Button {
+    #navTabs button {
         padding: 11px 14px;
         font-size: 14px;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    #navTabs Button {
+    #navTabs button {
         padding: 7px 10px;
         font-size: 10px;
     }

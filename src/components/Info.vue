@@ -5,5 +5,6 @@
         firstborn son by paying 5 silver shekels to a Kohen.</p>
     <p>Sometimes however, due to a number of circumstances this doesn't happen, and when the firstborn turns 13, the
         obligation then falls upon himself to Redeem himself. IE. A "Self Pidyon"</p>
-    <p>This site provides information on how to conduct a Self Pidyon. For the complete ceremony text, see our <RouterLink to="/">Nusach page</RouterLink>, and for the halachic source, visit our <RouterLink to="/source">Source page</RouterLink>.</p>
+    
+    <p style="margin-top:20px">This site provides information on how to conduct a Self Pidyon. For the complete ceremony text, see our <RouterLink to="/">Nusach page</RouterLink>, and for the halachic source, visit our <RouterLink to="/source">Source page</RouterLink>.</p>
 </template>
