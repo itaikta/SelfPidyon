@@ -10,6 +10,11 @@
     <h1>Self Pidyon - Nusach</h1>
     <button v-on:click="showLeft = !showLeft" type="button" style="margin-right: 5px;"><span v-if="showLeft">Hide</span><span v-if="!showLeft">Show</span> Left Column</button>
     <button v-if="showLeft" v-on:click="transliteration = !transliteration" type="button">Show <span v-if="transliteration">Translation</span><span v-if="!transliteration">Transliteration</span></button>
+    <div id="backgroundSelector">
+        <button style="padding-right: 3px; border-radius: 10px 0 0 10px;">AAA</button>
+        <button style="padding-left: 5px; padding-right: 5px; border-radius: 0;">BBB</button>
+        <button style="padding-left: 3px; border-radius: 0 10px 10px 0;">CCC</button>
+    </div>
     <div class="columns">
         <div v-if="showLeft" class="column">
             <NusachEnglishTransliteration v-if="transliteration" />

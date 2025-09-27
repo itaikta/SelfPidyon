@@ -5,30 +5,30 @@
     line-height: 1.5;
     font-weight: 400;
 
-    color-scheme: light dark;
+    color-scheme: dark light;
 
-    /* Theme variables (dark default) */
-    --color-text: rgba(255, 255, 255, 0.87);
-    --color-bg: #000000;
-    --color-surface: #213547;
-    --color-surface-contrast: #ffffff;
-    --color-surface-hover: #2a4460;
-    --color-surface-muted: #000000;
+    /* Theme variables: dark (default) */
+    --text: rgba(255, 255, 255, 0.87);
+    --bg: #000000;
+    --surface: #213547;
+    --surface-contrast: #ffffff;
+    --surface-hover: #2a4460;
+    --surface-muted: #000000;
+    --button-background: #2b2a33;
+    --button-hover: #52525e;
     /* Tabs */
-    --color-tab-active-bg: var(--color-surface);
-    --color-tab-active-text: var(--color-surface-contrast);
-    --color-tab-inactive-bg: #1a2a3d;
-    --color-tab-inactive-text: #dbe2ea;
-    --color-border: #444c56;
-    --color-border-subtle: #777777;
-    --color-panel: #f1f1f1;
-    --color-panel-border: #cccccc;
+    --tab-active-bg: var(--surface);
+    --tab-active-text: var(--surface-contrast);
+    --tab-inactive-bg: #1a2a3d;
+    --tab-inactive-text: #dbe2ea;
+    --border: #444c56;
+    --border-subtle: #777777;
+    --panel: #f1f1f1;
+    --panel-border: #cccccc;
     --link-hover: #747bff;
-    --shadow-2: 0 3px 8px rgba(0, 0, 0, 0.2);
-    --shadow-3: 0 6px 14px rgba(0, 0, 0, 0.25);
 
-    color: var(--color-text);
-    background-color: var(--color-bg);
+    color: var(--text);
+    background-color: var(--bg);
 
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -43,19 +43,19 @@
 
 #app {
     width: 70%;
-    background-color: var(--color-surface);
+    background-color: var(--surface);
     padding: 0px 2% 40px;
 }
 
 #navTabs {
-    background-color: var(--color-surface-muted);
+    background-color: var(--surface-muted);
     margin: 40px -2.85% 0;
 }
 
 #navTabs a {
     display: inline-block;
-    background-color: var(--color-tab-inactive-bg);
-    color: var(--color-tab-inactive-text);
+    background-color: var(--tab-inactive-bg);
+    color: var(--tab-inactive-text);
     border-radius: 10px 10px 0 0;
     margin-right: 5px;
     text-decoration: none;
@@ -73,20 +73,19 @@
 }
 
 #navTabs a:hover {
-    background-color: var(--color-surface-hover);
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-3);
+    background-color: var(--surface-hover);
+    box-shadow: 10 6px 14px rgba(0, 0, 0, 0.25);
 }
 
 #navTabs a:active {
     transform: translateY(0);
-    box-shadow: var(--shadow-2);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Active tab (RouterLink adds aria-current="page") */
 #navTabs a[aria-current="page"] {
-    background-color: var(--color-tab-active-bg);
-    color: var(--color-tab-active-text);
+    background-color: var(--tab-active-bg);
+    color: var(--tab-active-text);
 }
 
 #navTabs a:focus-visible {
@@ -103,73 +102,55 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        /* Light theme overrides */
-        --color-text: #000000;
-        --color-bg: #ffffff;
-        --color-surface: #f0f0f0;
-        --color-surface-contrast: #000000;
-        --color-surface-hover: #e6e6e6;
-        --color-surface-muted: #ffffff;
-        --color-border: #d0d7de;
-        --color-border-subtle: #777777;
-        --color-panel: #f1f1f1;
-        --color-panel-border: #cccccc;
-        --link-hover: #747bff;
-        --shadow-2: 0 2px 6px rgba(0, 0, 0, 0.06);
-        --shadow-3: 0 4px 10px rgba(0, 0, 0, 0.08);
-
+        /* Theme variables: light */
+        --text-light: #000000;
+        --bg-light: #2a4460;
+        --surface-light: #fff;
+        --surface-contrast-light: #000000;
+        --surface-hover-light: #bbb;
+        --surface-muted-light: #ffffff;
+        --border-light: #d0d7de;
         /* Tabs */
-        --color-tab-active-bg: var(--color-surface);
-        --color-tab-active-text: var(--color-surface-contrast);
-        --color-tab-inactive-bg: #e8e8e8;
-        --color-tab-inactive-text: #000000;
+        --tab-active-bg-light: var(--surface-light);
+        --tab-active-text-light: var(--surface-contrast-light);
+        --tab-inactive-bg-light: #eee;
+        --tab-inactive-text-light: #000000;
 
-        color: var(--color-text);
-        background-color: var(--color-bg);
-    }
-
-    a:hover {
-        color: var(--link-hover);
+        color: var(--text-light);
+        background-color: var(--bg-light);
     }
 
     #app {
-        color: var(--color-text);
-        background-color: var(--color-surface);
+        color: var(--text-light);
+        background-color: var(--surface-light);
     }
 
     #navTabs {
-        background-color: var(--color-surface-muted);
+        background-color: var(--bg-light);
     }
 
-    #navTabs button {
-        color: var(--color-tab-inactive-text);
-        background-color: var(--color-tab-inactive-bg);
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+    #navTabs a {
+        background-color: var(--tab-inactive-bg-light);
+        color: var(--tab-inactive-text-light);
     }
 
-    #navTabs button:hover {
-        background-color: var(--color-surface-hover);
-        box-shadow: var(--shadow-3);
+    #navTabs a:hover {
+        background-color: var(--surface-hover-light);
     }
 
-    #navTabs button:active {
-        background-color: #dedede;
-        box-shadow: var(--shadow-2);
-    }
-
-    #navTabs button:focus-visible {
-        outline: 2px solid #747bff;
-        outline-offset: 2px;
-    }
-
+    /* Active tab (RouterLink adds aria-current="page") */
     #navTabs a[aria-current="page"] {
-        color: #000;
+        background-color: var(--tab-active-bg-light);
+        color: var(--tab-active-text-light);
     }
 
     button {
-        color: var(--color-text);
+        color: var(--text-light);
         background-color: #ddd;
-        border-radius: 5px;
+    }
+
+    #app button:hover:not(#navTabs button:hover) {
+        background-color: #bbb;
     }
 }
 
@@ -202,39 +183,39 @@ p.comment {
 }
 
 @media only screen and (max-width: 800px) {
-
     p.nusach,
     .comment {
         font-size: 16px;
     }
 }
 
-#tabs {
-    margin: 50px auto;
-    overflow: hidden;
-    border: 1px solid var(--color-panel-border);
-    background-color: var(--color-panel);
+#app button:not(#navTabs button),
+#backgroundSelector {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--button-background);
 }
 
-#tabs.tab {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
+#app button:hover:not(#navTabs button:hover),
+#backgroundSelector button:hover {
+    background-color: var(--button-hover);
+}
+
+#backgroundSelector {
+    margin-left: 5px;
+    padding: 0;
+    display: inline-block;
 }
 
 h1 {
     padding-bottom: 4px;
-    border-bottom: 2px solid var(--color-border-subtle);
+    border-bottom: 2px solid var(--border-subtle);
     margin-bottom: 30px;
 }
 
 h2 {
-    color: var(--color-border-subtle);
+    color: var(--border-subtle);
     font-style: italic;
 }
 
