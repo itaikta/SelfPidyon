@@ -9,13 +9,11 @@
 
     /* Theme variables: dark (default) */
     --text: rgba(255, 255, 255, 0.87);
-    --bg: #000000;
-    --surface: #213547;
+    --bg: #213547;
+    --surface: #222222;
     --surface-contrast: #ffffff;
-    --surface-hover: #2a4460;
-    --surface-muted: #000000;
-    --button-background: #2b2a33;
-    --button-hover: #52525e;
+    --button-hover: #2a4460;
+    --button-background: var(--bg);
     /* Tabs */
     --tab-active-bg: var(--surface);
     --tab-active-text: var(--surface-contrast);
@@ -26,6 +24,7 @@
     --panel: #f1f1f1;
     --panel-border: #cccccc;
     --link-hover: #747bff;
+    --focus-ring: #8ab4ff;
 
     color: var(--text);
     background-color: var(--bg);
@@ -33,6 +32,17 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+#app a:hover:not(#navTabs a) {
+    color: var(--link-hover);
 }
 
 #app,
@@ -48,7 +58,7 @@
 }
 
 #navTabs {
-    background-color: var(--surface-muted);
+    background-color: var(--bg);
     margin: 40px -2.85% 0;
 }
 
@@ -58,7 +68,6 @@
     color: var(--tab-inactive-text);
     border-radius: 10px 10px 0 0;
     margin-right: 5px;
-    text-decoration: none;
     transition: background-color 150ms ease, transform 120ms ease, box-shadow 150ms ease, color 150ms ease;
 }
 
@@ -73,7 +82,7 @@
 }
 
 #navTabs a:hover {
-    background-color: var(--surface-hover);
+    background-color: var(--button-hover);
     box-shadow: 10 6px 14px rgba(0, 0, 0, 0.25);
 }
 
@@ -89,7 +98,7 @@
 }
 
 #navTabs a:focus-visible {
-    outline: 2px solid #8ab4ff;
+    outline: 2px solid var(--focus-ring);
     outline-offset: 2px;
 }
 
@@ -102,55 +111,23 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        /* Theme variables: light */
-        --text-light: #000000;
-        --bg-light: #2a4460;
-        --surface-light: #fff;
-        --surface-contrast-light: #000000;
-        --surface-hover-light: #bbb;
-        --surface-muted-light: #ffffff;
-        --border-light: #d0d7de;
-        /* Tabs */
-        --tab-active-bg-light: var(--surface-light);
-        --tab-active-text-light: var(--surface-contrast-light);
-        --tab-inactive-bg-light: #eee;
-        --tab-inactive-text-light: #000000;
-
-        color: var(--text-light);
-        background-color: var(--bg-light);
-    }
-
-    #app {
-        color: var(--text-light);
-        background-color: var(--surface-light);
-    }
-
-    #navTabs {
-        background-color: var(--bg-light);
-    }
-
-    #navTabs a {
-        background-color: var(--tab-inactive-bg-light);
-        color: var(--tab-inactive-text-light);
-    }
-
-    #navTabs a:hover {
-        background-color: var(--surface-hover-light);
-    }
-
-    /* Active tab (RouterLink adds aria-current="page") */
-    #navTabs a[aria-current="page"] {
-        background-color: var(--tab-active-bg-light);
-        color: var(--tab-active-text-light);
-    }
-
-    button {
-        color: var(--text-light);
-        background-color: #ddd;
-    }
-
-    #app button:hover:not(#navTabs button:hover) {
-        background-color: #bbb;
+        /* Theme variables: light (same blue-gray family as dark, higher luminance) */
+        --text: rgba(26, 42, 61, 0.92);
+        --bg: #c2d2e4;
+        --surface: #f8fafc;
+        --surface-contrast: #1a2a3d;
+        --button-hover: #a8bbd2;
+        --button-background: var(--bg);
+        --tab-active-bg: var(--surface);
+        --tab-active-text: var(--surface-contrast);
+        --tab-inactive-bg: #b0c4d9;
+        --tab-inactive-text: #2a3d52;
+        --border: #8fa3b8;
+        --border-subtle: #5a6b7d;
+        --panel: #eef2f6;
+        --panel-border: #b8c5d4;
+        --link-hover: #4c51bf;
+        --focus-ring: #2563eb;
     }
 }
 
