@@ -7,24 +7,37 @@
 
     color-scheme: dark light;
 
-    /* Theme variables: dark (default) */
-    --text: rgba(255, 255, 255, 0.87);
+    /* Theme: dark (default) */
+    --text-dark: #fff;
+    --text: var(--text-dark);
     --bg: #213547;
-    --surface: #222222;
+    --surface-dark: #222222;
+    --surface: var(--surface-dark);
     --surface-contrast: #ffffff;
     --button-hover: #2a4460;
     --button-background: var(--bg);
-    /* Tabs */
     --tab-active-bg: var(--surface);
     --tab-active-text: var(--surface-contrast);
     --tab-inactive-bg: #1a2a3d;
     --tab-inactive-text: #dbe2ea;
     --border: #444c56;
-    --border-subtle: #777777;
+    --border-subtle-dark: #777777;
+    --border-subtle: var(--border-subtle-dark);
     --panel: #f1f1f1;
     --panel-border: #cccccc;
     --link-hover: #747bff;
     --focus-ring: #8ab4ff;
+    /* Contrast: low */
+    --text-low: #656565;
+    --border-subtle-low: #555;
+
+    /* Theme: light */
+    --text-light: #1a2a3d;
+    --surface-light: #f8fafc;
+    --border-subtle-light: #424f5c;
+    /* Contrast: low */
+    --text-light-low: #bebebe;
+    --border-subtle-light-low: #555;
 
     color: var(--text);
     background-color: var(--bg);
@@ -111,15 +124,11 @@ a:hover {
 
 @media (prefers-color-scheme: light) {
     :root {
-        /* Theme variables: light (same blue-gray family as dark, higher luminance) */
-        --text: rgba(26, 42, 61, 0.92);
+        --text: var(--text-light);
         --bg: #c2d2e4;
-        --surface: #f8fafc;
+        --surface: var(--surface-light);
         --surface-contrast: #1a2a3d;
         --button-hover: #a8bbd2;
-        --button-background: var(--bg);
-        --tab-active-bg: var(--surface);
-        --tab-active-text: var(--surface-contrast);
         --tab-inactive-bg: #b0c4d9;
         --tab-inactive-text: #2a3d52;
         --border: #8fa3b8;
@@ -196,9 +205,44 @@ h2 {
     font-style: italic;
 }
 
-.columns {
+#columnsLightHigh,
+#columnsDarkHigh,
+#columnsLightLow,
+#columnsDarkLow {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: row;
+}
+
+#columnsLightHigh {
+    color: var(--text-light);
+    background-color: var(--surface-light);
+}
+#columnsLightHigh h2 {
+    color: var(--border-subtle-light);
+}
+#columnsLightLow {
+    color: var(--text-light-low);
+    background-color: var(--surface-light);
+}
+#columnsLightLow h2 {
+    color: var(--border-subtle-light-low);
+}
+#columnsDarkHigh {
+    color: var(--text-dark);
+    background-color: var(--surface-dark);
+}
+#columnsDarkHigh h2 {
+    color: var(--border-subtle-dark);
+}
+#columnsDarkLow {
+    color: var(--text-low);
+    background-color: var(--surface-dark);
+}
+#columnsDarkLow h2 {
+    color: var(--border-subtle-low);
 }
 
 .column {

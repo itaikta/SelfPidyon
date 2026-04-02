@@ -3,5 +3,6 @@
         "Kohen",
         "Nusach",
         "Pidyon"
-    ]
+    ],
+    "deno.enable": true
 }
