@@ -1,0 +1,6 @@
+{
+  "allowScripts": {
+    "allow": ["npm:esbuild@0.25.12", "npm:puppeteer@24.43.1"],
+    "deny": []
+  }
+}

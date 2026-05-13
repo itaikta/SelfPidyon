@@ -1,9 +1,10 @@
 <script lang="ts" setup>
+    import { ref } from 'vue';
+    import { usePreferredDark } from '@vueuse/core';
     import NusachHebrew from './NusachHebrew.vue';
     import NusachEnglishTransliteration from './NusachEnglishTransliteration.vue';
     import NusachEnglishTranslation from './NusachEnglishTranslation.vue';
-    import { ref } from 'vue';
-    import { usePreferredDark } from '@vueuse/core';
+    import PdfButton from './PdfButton.vue';
     
     let showLeft = ref(true);
     let transliteration = ref(true);
@@ -21,6 +22,7 @@
         }
     }
 </script>
+
 <template>
     <h1>Self Pidyon - Nusach</h1>
     <button v-on:click="showLeft = !showLeft" type="button" style="margin-right: 5px;"><span v-if="showLeft">Hide</span><span v-if="!showLeft">Show</span> Left Column</button>
@@ -44,5 +46,8 @@
             <NusachHebrew />
         </div>
     </div>
-    <p style="margin-top:20px">For background information about Self Pidyon, see our <RouterLink to="/info">Information page</RouterLink>. For the halachic source, visit our <RouterLink to="/source">Source page</RouterLink>.</p>
+    <PdfButton />
+
+    <hr style="margin-top: 25px;" />
+    <p>For background information about Self Pidyon, see our <RouterLink to="/info">Information page</RouterLink>. For the halachic source, visit our <RouterLink to="/source">Source page</RouterLink>.</p>
 </template>
