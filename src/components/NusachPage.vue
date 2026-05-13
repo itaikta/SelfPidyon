@@ -46,7 +46,7 @@
             <NusachHebrew />
         </div>
     </div>
-    <PdfButton />
+    <!-- <PdfButton /> -->
 
     <hr style="margin-top: 25px;" />
     <p>For background information about Self Pidyon, see our <RouterLink to="/info">Information page</RouterLink>. For the halachic source, visit our <RouterLink to="/source">Source page</RouterLink>.</p>
